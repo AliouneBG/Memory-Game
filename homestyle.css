@@ -1,0 +1,180 @@
+@font-face{
+    font-family: "Creepy";
+    src:url("Assets/fonts/Creepy.woff") format("Woff"), url("Assets/Fonts/Creepy.woff2") format("woff2")
+}
+
+@font-face{
+    font-family: "Lunacy";
+    src:url("Assets/fonts/Lunacy.woff") format("Woff"), url("Assets/Fonts/Lunacy.woff2") format("woff2")
+}
+*{
+    box-sizing:border-box;
+}
+html{
+    min-height: 100vh;
+}
+/*the overflow attribute below removes the scroll bar on the side*/
+body{
+    /*background: black;
+    background: linear-gradient(rgb(52, 3, 52),black);*/
+    /*background-image: url(Assets/Video/coldmagiceffect.mp4);*/
+    /*background-image: linear-gradient(to right, #141e30, #243b55);*/
+/*background: radial-gradient(purple,black);*/
+    /*background-image: url(Assets/Images/greenspiders.jpg);*/
+    overflow: hidden;
+}
+
+/*the welcome container possesses the styling and positioning of elements in the homepage*/
+
+.welcome-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top:243px;
+}
+
+/*The game title is the text that appears on top of the page. The code below determines its styling and position on the screen. Further, the animation is
+used to change colors dynamically every 10s*/
+.game-title{
+    text-align: center;
+    color:white;
+    font-family: Creepy, serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+    animation: color-change 10s infinite; 
+}
+
+@keyframes color-change {
+    0% { color: rebeccapurple;}
+    25%{color: aqua;}
+    50% { color:green;}
+    75%{color:#FF6D00;}
+    100% { color: rebeccapurple;}
+  };
+
+  /* The code below determines the styling and positioning of the text elements in the body(where the welcome message is placed.*/
+.welcome{
+   display:flex;
+   flex-direction: column;
+   
+}
+.welcome-info{
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+    color:white;
+    font-family: Creepy, sans-serif;
+}
+.welcome-subhead{
+    font-weight:900;
+    /*font-family: Creepy, sans-serif;*/
+    color:white;
+}
+
+.level{
+    font-size: 3.7ch;
+    font-weight: normal;
+    font-family: Creepy, serif;
+    margin:80px;
+}
+
+.lvl1{
+    text-decoration: none;
+    color:black;
+    font-weight: 900;
+    box-sizing: border-box;
+    
+}
+
+.lvl2{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    
+}
+
+.lvl3{
+    text-decoration: none;
+    color:black;
+    font-weight: 900;
+}
+.prompt{
+    /*align-items: right;*/
+    margin-right: 0;
+    font-size: 1.7ch;
+}
+.level-container{
+    display:flex;
+   
+}
+
+.one{
+    width: 175px;
+    height: 50px;
+    padding-top: 10px;
+    background: green;
+    text-align: center;
+    /*border-radius: 5rem ;*/
+}
+.two{
+    width: 175px;
+    height: 50px;
+    padding-top: 10px;
+    background: #dd6408;
+    text-align: center;
+    /*border-radius: 5rem*/ ;
+}
+.three{
+    width: 175px;
+    height: 50px;
+    padding-top: 10px;
+    background: rebeccapurple;
+    text-align: center;
+    /*border-radius: 5rem*/ ;
+}
+footer{
+    text-decoration: none;
+    margin:0;
+}
+.exit{
+    top:0;
+    right:0;
+    font-size: 2em;
+    font-family: cursive;
+    color:#FF6D00;
+}
+
+/*div::after{
+    display: inline-block;
+    content: "\00d7";
+}*/
+#background-video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/*.btn {
+        /*background-color: #f4511e;*/
+        /*border: none;*/
+        /*color: white;*/
+       /* padding-bottom: 15px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition:0.3s;
+}
+
+.btn:hover {opacity: 1}*/
+/*And for this reason, the code above is used to style the homepage of the application. Each of the different*/
+
+/* The exit button is located at the bottom of the screen in each page(or level) in order to allow the player to return to the homepage*/
